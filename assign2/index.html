@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 2 - CSS</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .profile{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+
+        background-image: url('images/background_img.avif');
+        background-size: cover;
+        padding: 20px;
+        border-radius: 10px;
+    } 
+
+    .profile-pic{
+        height: 25%;
+        width: 25%;
+        border-radius: 50%;
+        border: 3px solid #fff;
+    }
+
+    .about-me{
+        background-color: lightblue;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .about-me h2{
+        color: #2c3e50;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="profile">
+        <img src="images/profilephoto.avif" alt="Profile Picture" class="profile-pic">
+        <div class="profile-info" style = "text-align: center;">
+            <h1 style = "color: whitesmoke;">Aripaka Likhith</h1>
+            <hr style = "width: 100%;">
+            <p style = "color: whitesmoke;">Department Of Computer Science and Technology</p>
+        </div>
+    </div>
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi! I am Aripaka Likhith, a Computer Science and Technology student
+            who enjoys programming and learning new technologies. I am currently
+            improving my skills in C++, Data Structures and Algorithms, and Web
+            Development.
+        </p>
+    </div>
+    <div class="wht" style = "background-color: lightblue; padding: 20px; border-radius: 10px; margin-top: 20px;">
+        <h2 style = "text-align: center; color:#2c3e50">What did I Like</h2>
+        <p>
+            I enjoy solving problems and challenges, especially in the field of
+            programming. I also like to explore new technologies and frameworks,
+            and I am always eager to learn and improve my skills. In my free time,
+            I like to watch movies and play video games.
+        </p>
+    </div>
+    <div class="editor">
+        <div class="page-preview">
+        <h2 style = "text-align: center;">My Page</h2>
+        <p style = "text-align: center;">
+            This is the page that will change according to the
+            settings selected in Page Setup.
+        </p>
+        </div>
+        <form class = 'page-setup'>
+        <div class="page-header" style = "display: flex; justify-content: center;">
+            <h3>Page Setup</h3>
+        </div>
+        <div class="items">
+            <div class="orientation" style="display: flex;justify-content: space-evenly; align-items: center;">
+                <h4>Orientation</h4>
+                <input type="radio" name="orientation" id="portrait" value="portrait" checked>
+                <label for="portrait">Portrait</label>
+
+                <input type="radio" name="orientation" id="landscape" value="landscape">
+                <label for="landscape">Landscape</label>
+            </div>
+            <div class="paper-size">
+                <h4 margin-bottom="10px">Paper Size</h4>
+                <div class="ops" style="display: flex; justify-content: space-evenly; align-items: center;">
+                    <input type="radio" name="paper-size" id="a4" value="a4" checked>
+                    <label for="a4">A4</label>
+                    <input type="radio" name="paper-size" id="letter" value="letter">
+                    <label for="letter">Letter</label>
+                    <input type="radio" name="paper-size" id="legal" value="legal">
+                    <label for="legal">Legal</label>
+                </div>
+            </div>
+            <div class="margins">
+                <h4>Margins <span>(centimetres)</span></h4>
+                <div class="margin-options">
+                    <div class="margin-item">
+                        <label for="top">Top</label>
+                        <input type="number" id="top" value="2.54">
+                    </div>
+                <div class="margin-item">
+                    <label for="bottom">Bottom</label>
+                    <input type="number" id="bottom" value="2.54">
+                </div>
+                <div class="margin-item">
+                    <label for="left">Left</label>
+                    <input type="number" id="left" value="2.54">
+                </div>
+                <div class="margin-item">
+                    <label for="right">Right</label>
+                    <input type="number" id="right" value="2.54">
+                </div>
+        </div>
+
+    </div>
+
+</div>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
