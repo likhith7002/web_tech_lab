@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1>CGPA Calculator</h1>
+        <button class="nav-button" onclick="window.location.href='index.html'">Home</button>
+    </div>
+    <div class="details-box" id="details-box">
+        <div class="det-head">
+            <h2>complete these details Below</h2>
+        </div>
+        <form id="sgpa-form">
+            <div class="student-det">
+                <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <label for="roll">Roll Number : </label>
+                <input type="number" id="roll" placeholder="Enter your Roll Number" required>
+                <label for="branch">Branch : </label>
+                <input type="text" id="branch" placeholder="Enter your Branch" required>
+                <label for="sem">Semester : </label>
+                <input type="number" id="sem" placeholder="Enter your Semester" min="1" max="8" required>
+            </div>
+
+            <div id="subjects">
+                <div class="sub-card">
+                    <h3>Subject 1</h3>
+                    <input type="text" class="subject-name" placeholder="Subject Name" required>
+                    <input type="number" class="marks" placeholder="Marks" min="0" max="100" required>
+                    <input type="number" class="credits" placeholder="Credits" min="1" max="4" required>
+                </div>
+                <div class="sub-card">
+                    <h3>Subject 2</h3>
+                    <input type="text" class="subject-name" placeholder="Subject Name" required>
+                    <input type="number" class="marks" placeholder="Marks" min="0" max="100" required>
+                    <input type="number" class="credits" placeholder="Credits" min="1" max="4" required>
+                </div>
+                <div class="sub-card">
+                    <h3>Subject 3</h3>
+                    <input type="text" class="subject-name" placeholder="Subject Name" required>
+                    <input type="number" class="marks" placeholder="Marks" min="0" max="100" required>
+                    <input type="number" class="credits" placeholder="Credits" min="1" max="4" required>
+                </div>
+                <div class="sub-card">
+                    <h3>Subject 4</h3>
+                    <input type="text" class="subject-name" placeholder="Subject Name" required>
+                    <input type="number" class="marks" placeholder="Marks" min="0" max="100" required>
+                    <input type="number" class="credits" placeholder="Credits" min="1" max="4" required>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" id="add-subject">Add Subject</button>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+        
+    </div>
+    <div class="result" id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>

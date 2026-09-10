@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f5;
+    color: #1f2933;
+}
+/* topinfo */
+header {
+    color: whitesmoke;
+    text-align: center;
+    background-color: #276749;
+    padding: 30px;
+}
+header h1 {
+    margin-bottom: 8px;
+}
+header p {
+    font-size: 16px;
+}
+
+/* main */
+main {
+    padding: 20px;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar #Search {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button{
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #276749;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1e4d3b;
+}
+
+/* faculty divs */
+.fac-cont {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.fac-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+.fac-card :hover{
+    background-color: #f0f0f0;
+}
+.fac-card .fac-photo {
+    margin-bottom: 15px;
+}
+.fac-card img{
+    width: 160px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.fac-card h2 {
+    color: #276749;
+}
+.fac-card p {
+    color: #4b5563;
+}
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #276749;
+    font-size: 16px;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+/* search result */
+
+#search-result {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.search-profile {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.search-profile-photo img {
+    width: 220px;
+    height: 270px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.search-profile-info {
+    flex: 1;
+}
+
+.search-profile-info h2 {
+    color: #276749;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.search-profile-info p {
+    color: #4b5563;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.search-profile-info strong {
+    color: #1f2933;
+}
