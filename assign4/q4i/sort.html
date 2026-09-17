@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Sort Numbers</title>
+    <script>
+        // JS function to create N input boxes for numbers
+        function generateBoxes() {
+            var n = document.getElementById("count").value;
+            var container = document.getElementById("numberBoxes");
+            container.innerHTML = "";
+            for (var i = 1; i <= n; i++) {
+                container.innerHTML += "Number " + i + ": <input type='text' name='num[]'><br>";
+            }
+            document.getElementById("submitBtn").style.display = "inline";
+        }
+    </script>
+</head>
+<body>
+    <h2>Sort N Numbers</h2>
+    How many numbers (N)?
+    <input type="text" id="count">
+    <button type="button" onclick="generateBoxes()">Generate Boxes</button>
+    <br><br>
+ 
+    <form action="4i_sort.php" method="post">
+        <div id="numberBoxes"></div>
+        <br>
+        <input type="submit" id="submitBtn" value="Sort" style="display:none;">
+    </form>
+</body>
+</html>
