@@ -1,5 +1,5 @@
 <?php
-// Q4 ii: Use array in PHP to display N names of animals (N is user's input)
+
 
 function showAnimals($arr) {
     foreach ($arr as $animal) {
@@ -7,7 +7,7 @@ function showAnimals($arr) {
     }
 }
 
-$animals = $_POST['animal'];   // array of animal names from the form
+$animals = $_POST['animal'];   
 
 echo "List of animals entered: <br>";
 showAnimals($animals);

@@ -6,9 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <title>Animal Names</title>
     <script>
-        // JS function to create N input boxes for animal names
+        
         function generateBoxes() {
             var n = document.getElementById("count").value;
             var container = document.getElementById("nameBoxes");
@@ -26,8 +25,7 @@
     <input type="text" id="count">
     <button type="button" onclick="generateBoxes()">Generate Boxes</button>
     <br><br>
- 
-    <form action="4ii_animals.php" method="post">
+    <form action="animals.php" method="post">
         <div id="nameBoxes"></div>
         <br>
         <input type="submit" id="submitBtn" value="Show Animals" style="display:none;">

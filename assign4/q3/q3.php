@@ -1,5 +1,4 @@
 <?php
-// Q3: Display only odd numbers between 1 to N (N is user's input)
 
 function showOddNumbers($n) {
     for ($i = 1; $i <= $n; $i++) {

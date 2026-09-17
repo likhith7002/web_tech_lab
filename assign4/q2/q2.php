@@ -1,5 +1,4 @@
 <?php
-// Q2: Display grade of student based on marks entered at client side
 
 function findGrade($marks) {
     if ($marks >= 90) {
@@ -18,6 +17,7 @@ function findGrade($marks) {
 $marks = $_POST['marks'];
 $grade = findGrade($marks);
 
-echo "Marks entered: " . $marks . "<br>";
-echo "Grade: " . $grade;
+echo "Marks entered: $marks";
+echo "<br>";
+echo "Grade: $grade";
 ?>
