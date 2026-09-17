@@ -14,12 +14,25 @@ header {
     text-align: center;
     background-color: #276749;
     padding: 30px;
+    display: flex;
+    align-items: center;
 }
-header h1 {
+.heading{
+    margin: auto;
+}
+.heading h1 {
     margin-bottom: 8px;
 }
-header p {
+.heading p {
     font-size: 16px;
+}
+.back {
+    background-color: whitesmoke;
+    color: #276749;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* main */
