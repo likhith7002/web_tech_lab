@@ -1,0 +1,26 @@
+CREATE DATABASE student_db;
+
+USE student_db;
+
+CREATE TABLE `2024CST001` (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    department VARCHAR(100),
+    marks INT
+);
+
+INSERT INTO `2024CST001`
+(name, age, department, marks)
+VALUES
+('Rahul', 20, 'CST', 85),
+('Priya', 21, 'CST', 92),
+('Arjun', 20, 'ECE', 76),
+('Sneha', 21, 'EE', 88),
+('Kiran', 20, 'ME', 69);
+
+SELECT * FROM `2024CST001`;
+
+
+ALTER TABLE `2024CST001`
+ADD gender VARCHAR(20);

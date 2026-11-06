@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Student</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Add Student</h1>
+
+        <form id="studentForm">
+
+            <!-- Textbox -->
+            <label for="name">Student Name:</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter student name"
+                required
+            >
+
+
+            <!-- Radio / Option Button -->
+            <label>Gender:</label>
+
+            <div class="radio-group">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male"
+                        required
+                    >
+                    Male
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Female"
+                    >
+                    Female
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Other"
+                    >
+                    Other
+                </label>
+
+            </div>
+
+
+            <!-- List Box -->
+            <label for="department">Department:</label>
+
+            <select
+                id="department"
+                name="department"
+                required
+            >
+                <option value="">Select Department</option>
+                <option value="CST">CST</option>
+                <option value="ECE">ECE</option>
+                <option value="EE">EE</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+            </select>
+
+
+            <!-- Hidden Element -->
+            <input
+                type="hidden"
+                name="form_type"
+                value="Student Registration"
+            >
+
+
+            <button type="submit">
+                Add Student
+            </button>
+
+        </form>
+
+
+        <!-- AJAX response -->
+        <div id="message"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
