@@ -1,8 +1,7 @@
 <?php
-
-function showHello() {
-    echo "Hello PHP";
-}
-
-showHello();
+    function showHello()
+    {
+        echo "Hello PHP";
+    }
+    showHello();
 ?>

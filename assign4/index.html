@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Web Technology Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PHP Web Technology Assignment</h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <div class="question-number">Q1</div>
+            <h2>Display "Hello PHP"</h2>
+            <p class="description">Display a simple message using PHP.</p>
+            <form class="ajax-form" action="q.php" method="post">
+                <input type="hidden" name="question" value="q1">
+                <button type="submit">Run Q1</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="question-number">Q2</div>
+            <h2>Student Grade</h2>
+            <p class="description">Enter marks and display the student's grade.</p>
+            <form class="ajax-form" action="q.php" method="post">
+                <label for="marks">Marks</label>
+                <input type="number" id="marks" name="marks" min="0" max="100" step="1" placeholder="Enter marks (0-100)" required>
+                <input type="hidden" name="question" value="q2">
+                <button type="submit">Get Grade</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="question-number">Q3</div>
+            <h2>Odd Numbers</h2>
+            <p class="description">Display all odd numbers between 1 and N.</p>
+            <form class="ajax-form" action="q.php" method="post">
+                <label for="n">Enter N</label>
+                <input type="number" id="n" name="n" min="1" placeholder="Enter N" required>
+                <input type="hidden" name="question" value="q3">
+                <button type="submit">Generate Odd Numbers</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="question-number">Q4</div>
+            <h2>PHP Arrays</h2>
+            <p class="description">Perform operations using arrays in PHP.</p>
+
+            <div class="sub-question">
+                <h3>Q4(i) Sort N Numbers</h3>
+                <form class="ajax-form" action="q.php" method="post">
+                    <label for="numbers">Enter numbers</label>
+                    <input type="text" id="numbers" name="numbers" placeholder="Example: 5 2 8 1 4" required>
+                    <input type="hidden" name="question" value="q4i">
+                    <button type="submit">Sort Numbers</button>
+                </form>
+            </div>
+
+            <div class="sub-question">
+                <h3>Q4(ii) Display Animal Names</h3>
+                <form class="ajax-form" action="q.php" method="post">
+                    <label for="animal-count">Number of animals (maximum 8)</label>
+                    <input type="number" id="animal-count" name="animal_count" min="1" max="8" placeholder="Enter N" required>
+                    <input type="hidden" name="question" value="q4ii">
+                    <button type="submit">Show Animals</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="question-number">Q5</div>
+            <h2>Feedback Form</h2>
+            <p class="description">Submit information to the server using a PHP form.</p>
+
+            <form class="ajax-form" action="q.php" method="post" enctype="multipart/form-data">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="uname" placeholder="Enter your name" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="upass" placeholder="Enter password" required>
+
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+
+                <label for="city">City</label>
+                <select id="city" name="city" required>
+                    <option value="">Select City</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                </select>
+
+                <label for="file">Upload File</label>
+                <input type="file" id="file" name="ufile">
+
+                <input type="hidden" name="college" value="IIEST Shibpur">
+                <input type="hidden" name="department" value="Computer Science">
+                <input type="hidden" name="question" value="q5">
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="question-number">Q6</div>
+            <h2>Animal Images</h2>
+            <p class="description">Enter N and display N animal images using a PHP array.</p>
+            <form class="ajax-form" action="q.php" method="post">
+                <label for="image-count">Number of images (maximum 6)</label>
+                <input type="number" id="image-count" name="image_count" min="1" max="6" placeholder="Enter N" required>
+                <input type="hidden" name="question" value="q6">
+                <button type="submit">Display Images</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="question-number">Q7 - Optional</div>
+            <h2>AJAX Database Connection</h2>
+            <p class="description">Enter a student name and email. PHP saves the record in MySQL and displays the saved records without reloading this page.</p>
+            <form class="ajax-form" action="q.php" method="post">
+                <label for="student-name">Student name</label>
+                <input type="text" id="student-name" name="student_name" placeholder="Enter student name" required>
+
+                <label for="student-email">Email</label>
+                <input type="email" id="student-email" name="student_email" placeholder="Enter email address" required>
+
+                <input type="hidden" name="question" value="q7">
+                <button type="submit">Save Student and View Records</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="question-number">Q8 - Optional</div>
+            <h2>Subject-wise Marks, Total, Average and Grade</h2>
+            <p class="description">Enter marks out of 100 in each subject. PHP stores the marks in an associative array and calculates the result using the average.</p>
+            <form class="ajax-form" action="q.php" method="post">
+                <label for="result-student-name">Student name</label>
+                <input type="text" id="result-student-name" name="result_student_name" placeholder="Enter student name" required>
+
+                <label for="dsa-marks">Data Structures and Algorithms</label>
+                <input type="number" id="dsa-marks" name="subject_marks[DSA]" min="0" max="100" step="1" placeholder="Marks out of 100" required>
+
+                <label for="dbms-marks">Database Management Systems</label>
+                <input type="number" id="dbms-marks" name="subject_marks[DBMS]" min="0" max="100" step="1" placeholder="Marks out of 100" required>
+
+                <label for="web-marks">Web Technology</label>
+                <input type="number" id="web-marks" name="subject_marks[Web Technology]" min="0" max="100" step="1" placeholder="Marks out of 100" required>
+
+                <label for="cao-marks">Computer Architecture</label>
+                <input type="number" id="cao-marks" name="subject_marks[Computer Architecture]" min="0" max="100" step="1" placeholder="Marks out of 100" required>
+
+                <input type="hidden" name="question" value="q8">
+                <button type="submit">Calculate Result</button>
+            </form>
+        </section>
+    </main>
+
+    <section class="card">
+        <h2>Output</h2>
+        <div id="result">Select a question and click its button.</div>
+    </section>
+
+    <footer>
+        <p>Web Technology | PHP Assignment</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".ajax-form").forEach(form => {
+                form.addEventListener("submit", async function (event) {
+                    event.preventDefault();
+
+                    const result = document.getElementById("result");
+                    const formData = new FormData(form);
+                    const submitButton = form.querySelector('button[type="submit"]');
+
+                    result.innerHTML = "Processing...";
+                    if (submitButton) submitButton.disabled = true;
+
+                    try {
+                        const response = await fetch("q.php", {
+                            method: "POST",
+                            body: formData
+                        });
+
+                        const output = await response.text();
+                        if (!response.ok) {
+                            throw new Error(output || "HTTP Error: " + response.status);
+                        }
+
+                        result.innerHTML = output;
+                    } catch (error) {
+                        result.textContent = "Error: " + error.message;
+                    } finally {
+                        if (submitButton) submitButton.disabled = false;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

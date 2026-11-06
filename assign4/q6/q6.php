@@ -1,5 +1,6 @@
 <?php
 
+$n = $_POST['n'];
 function showAnimalImages($n) {
     $images = array(
         "images/tiger.jpg",
@@ -15,8 +16,6 @@ function showAnimalImages($n) {
         }
     }
 }
-
-$n = $_POST['n'];
 echo "Showing $n animal image(s): <br><br>";
 showAnimalImages($n);
 ?>
